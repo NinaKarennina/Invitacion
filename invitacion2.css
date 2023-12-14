@@ -200,7 +200,7 @@ header ul li a:hover {
 }
 
 #padres,#recepcion,#fiesta,#asistencia{
-  position: relative;
+  position: relative; 
   top: 0;
     background: var(--background-color);
     width: 100vw;
