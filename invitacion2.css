@@ -2,7 +2,9 @@
   --primary-color: #dac2fe;
   --background-color: #222;
   --text-color: #eee;
-  --text-size-small:1.5em;
+  --text-size-small:1em;
+  --text-size-medium:1.5em;
+  --text-size-large:2em
 }
 
 * {
@@ -31,7 +33,7 @@ header .logo {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
-  font-size: 2em;
+  font-size: var(--text-size-medium);
   font-family: 'Kalnia', serif;
 }
 
@@ -103,14 +105,15 @@ header ul li a:hover {
   text-align: center;
     font-family: 'Kalnia', serif;
     position: relative;
-  font-size: 3em;
+  font-size: var(--text-size-large);
   color: var(--primary-color);
 }
 
 #nosotros .content p {
   position: relative;
-  font-size: 1.5em;
+  font-size: var(--text-size-medium);
   color: var(--text-color);
+  font-weight: 600;
 }
 .back{
   position: sticky;
@@ -134,9 +137,10 @@ header ul li a:hover {
   max-width: 100vw;
   text-align: center;
   height: 100vh;
-  font-size: 2em;
+  font-size: var(--text-size-small);
   color: var(--text-color);
   z-index: 4;
+  font-weight: 600;
 } 
 
 .btn {
@@ -193,14 +197,14 @@ header ul li a:hover {
   text-align: center;
     font-family: 'Kalnia', serif;
     position: relative;
-  font-size: 3em;
+  font-size: var(--text-size-large);
   max-height: fit-content;
   flex-basis: 100%;
   color: var(--primary-color);
 }
 
 #padres,#recepcion,#fiesta,#asistencia{
-  position: relative; 
+  position: relative;
   top: 0;
     background: var(--background-color);
     width: 100vw;
@@ -223,7 +227,7 @@ header ul li a:hover {
 .secText h2{
   text-align: center;
     font-family: 'Kalnia', serif;
-    font-size: 2em;
+    font-size: var(--text-size-medium);
     color: var(--text-color);
 }
 
