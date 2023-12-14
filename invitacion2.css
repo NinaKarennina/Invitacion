@@ -111,6 +111,7 @@ header ul li a:hover {
 
 #nosotros .content p {
   position: relative;
+  text-align: center;
   font-size: var(--text-size-medium);
   color: var(--text-color);
   font-weight: 600;
