@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/love.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Kalnia:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="invitacion2.css" />
+    <title>Jazmín & Eduardo</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">J + E</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#padrinos">Padres</a></li>
+            <li><a href="#damas">Recepción</a></li>
+            <li><a href="#fiesta">Fiesta</a></li>
+            <li><a href="#mesaderegalos">Mesa de Regalos</a></li>
+        </ul>
+    </header>
+    <button class="btn" id="playSong"> Play</button>
+    <section id="nosotros">
+        <img src="images/Pareja.jpg" id="main">
+
+        <div class="content">
+                <h2>Jazmín<br>
+                    &<br>
+                    Eduardo
+                </h2>
+                <p>- SAVE THE DATE -</p>
+                <p>Lunes, 22 de enero de 2024</p>
+
+
+        </div>
+    </section>
+    
+    <div class="back">
+        <img src="images/Pareja2.jpg" id="main2">
+    </div>
+    <section id="padrinos">
+        
+        <div class="secText">
+            <h2>¡Nos casamos!</h2>
+            <p>Con el amor y el apoyo de nuestros padres, te invitamos a ser parte de nuestra unión</p>
+            <div class="content">
+                <div class="textBx">
+                    <img src="images/novia.png">
+                    <h2>Padres de la novia</h2>
+                    <p>Hugo Calleja Nava</p>
+                    <p>Ericka Sánchez Río</p>
+                </div>
+                <div class="textBx">
+                    <img src="images/novio.png">
+                    <h2>Padres del novio</h2>
+                    <p>Eduardo Mena Contreras</p>
+                    <p>Dulcinea Beltrán Gutiérrez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <div class="countdown">
+        <h2>¡Sólo faltan!</h2>
+        <div class="timer">
+            <p id="days">00</p>
+            <span>Días</span>
+        </div>
+        <div class="timer">
+            <p id="hours">00</p>
+            <span>Horas</span>
+        </div>
+        <div class="timer">
+            <p id="minutes">00</p>
+            <span>Minutos</span>
+        </div>
+        <div class="timer">
+            <p id="seconds">00</p>
+            <span>Segundos</span>
+        </div>
+    </div>
+    <div class="hidePhoto"></div>
+    <div class="back">
+        <img src="images/Pareja4.jpg" id="main2">
+        </div>
+    <section id="damas">
+        <div class="secText">
+            <h2>Ceremonia y Recepción</h2>
+            <p>Lunes,Lunes, 22 de enero de 2024</p>
+            <p><strong> 1 p.m.</strong></p>
+            <div class="content">
+                <div class="textBx">
+                    <h2>Jardín Carmen</h2>
+                    <p>Av. Constancio Farfán s/n</p>
+                    
+                </div>
+
+                <div class="textBx">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.4972669861704!2d-98.95864692390913!3d18.731312682403555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce644dbe9470eb%3A0x37296accae448f09!2sJardin%20Carmen!5e0!3m2!1ses-419!2smx!4v1702416346964!5m2!1ses-419!2smx"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="textos">
+        <p>Ponme como un sello sobre tu corazón, como un sello sobre tu brazo, porque el amor es tan fuerte como
+            la
+            muerte. Las aguas embravecidas no pueden extinguir el amor, ni pueden los ríos llevárselo con la
+            corriente</p>
+        <p>El cantar de los cantares 8:6,7a</p>
+    </div>
+    <section id="fiesta">
+        
+    </section>
+    <section id="mesaderegalos">
+        <div class="secText">
+            <h2>Confirma tu asistencia</h2>
+            <div class="textBx">
+                <p>Whatsapp Novia</p>
+            </div>
+            <div class="textBx">
+                <p>Whatsapp Novia</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active() {
+            list.forEach((i) =>
+                i.classList.remove('active'));
+            this.classList.add('active');
+
+        }
+
+        list.forEach((i) =>
+            i.addEventListener('click', active));
+        let isPlaying = false;
+        const playBtn = document.getElementById('playSong');
+        let sound = new Audio('./images/LaPosibilidad.mp3');
+
+        playBtn.addEventListener('click', () => {
+
+            if (isPlaying) {
+                playBtn.textContent = 'Play'
+                sound.pause();  // Pausa la reproducción
+            } else {
+                playBtn.textContent = 'Pause'
+                sound.play();   // Inicia la reproducción
+            }
+            isPlaying = !isPlaying;
+        })
+
+        const countDownDate = new Date('Jan 22, 2024 00:00:00').getTime();
+        const $days = document.getElementById('days');
+        const $hours = document.getElementById('hours');
+        const $minutes = document.getElementById('minutes');
+        const $seconds = document.getElementById('seconds');
+        let interval = setInterval(
+            function () {
+                const now = new Date().getTime();
+
+                let distance = countDownDate - now;
+
+                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+                let minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+                let seconds = Math.floor(distance % (1000 * 60) / (1000));
+
+                $days.innerHTML = days;
+                $hours.innerHTML = hours;
+                $minutes.innerHTML = minutes;
+                $seconds.innerHTML = ('0' + seconds).slice(-2);
+
+                if (distance < 0) {
+                    clearInterval(interval);
+
+                }
+            },
+            1000);
+
+    </script>
+
+
+
+</body>
+
+</html>
