@@ -221,6 +221,8 @@ header ul li a:hover {
   position: relative;
   top: 0;
   background: var(--background-color);
+  background-image: url(./images/marmol.svg);
+  background-size: cover;
   width: 100vw;
   min-height: 100vh;
   padding: 120px 100px;
