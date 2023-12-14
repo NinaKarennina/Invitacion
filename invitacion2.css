@@ -2,10 +2,10 @@
   --primary-color: #AE86E8;
   --background-color: #F9F1EF;
   --text-color: #B0855C;
-  --text-size-small: 1.2em;
-  --text-size-medium: 1.6em;
-  --text-size-large: 3em;
-  --text-size-xlarge: 5em;
+  --text-size-small: 2em;
+  --text-size-medium: 3em;
+  --text-size-large: 4em;
+  --text-size-xlarge: 6em;
 }
 
 * {
