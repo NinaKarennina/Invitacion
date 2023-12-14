@@ -268,17 +268,19 @@ header ul li a:hover {
 
 @media(max-aspect-ratio:16/9){
     #main,#main2 {
-    
-    height: 100vh;
-    object-fit: cover;
+      height: 100vh;
+      object-fit: cover;
     }
-        
+  
+    .content{
+      flex-direction: column;
+    }
 
-.content{
-    flex-direction: column;
-}
-
-header{
-    display: none;
-}
+    header{
+      display: none;
+    }
+    iframe{
+      width: 70vw;
+      height: 60vw;
+    }
 }
