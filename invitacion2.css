@@ -190,7 +190,7 @@ header ul li a:hover {
   margin: 0.5em;
   margin-bottom: 5em;
   place-items: center;
-  font-weight: 700;
+  font-weight: 400;
   padding: 1em;
   border: 20px;
   border-color: var(--background-color);
