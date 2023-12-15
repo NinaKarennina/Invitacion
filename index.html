@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">   
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="icon" type="image/x-icon" href="images/love.ico" />
 
@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=Crafty+Girls&family=Schoolbell&Dosis:wght@200;300;400;500;600;700&family=Kalnia:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="invitacion2.css" /> 
+    <link rel="stylesheet" type="text/css" href="invitacion2.css" />
     <title>Jazmín & Eduardo</title>
 </head>
 
@@ -33,13 +33,13 @@
 
         <div class="content">
             <h1>Nuestra Boda<h1>
-            
-            <h2>Jazmín<br>
-                &<br>
-                Eduardo
-            </h2>
-            
-            <p>22 de enero de 2024</p>
+
+                    <h2>Jazmín<br>
+                        &<br>
+                        Eduardo
+                    </h2>
+
+                    <p>22 de enero de 2024</p>
 
 
         </div>
@@ -52,7 +52,7 @@
 
         <div class="secText">
             <h2>¡Nos casaremos!</h2>
-            <p>Queremos compartir contigo la alegría de nuestra unión, así que 
+            <p>Queremos compartir contigo la alegría de nuestra unión, así que
                 nos complace extender esta invitación, esperamos que puedas acompañarnos
                 en este día tan especial para nosotros.
             </p>
@@ -117,11 +117,8 @@
                 <div class="textBx">
                     <h2>Ver mapa</h2>
                     <a href="https://maps.app.goo.gl/JEJqgxwhd4BfwZ7n9"><img src="images/map.svg"></a>
-                    
-                    <!-- <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.4972669861704!2d-98.95864692390913!3d18.731312682403555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce644dbe9470eb%3A0x37296accae448f09!2sJardin%20Carmen!5e0!3m2!1ses-419!2smx!4v1702416346964!5m2!1ses-419!2smx"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                </div>
             </div>
         </div>
     </section>
@@ -132,25 +129,29 @@
             Ponme como un sello sobre tu corazón,<br>
             como un sello sobre tu brazo,<br>
             porque el amor es tan fuerte<br>
-             como la muerte.<br>
+            como la muerte.<br>
             <br>
             Las aguas embravecidas no pueden extinguir el amor,<br>
             ni pueden los ríos llevárselo <br>
             con la corriente
 
-            
-            
+
+
         </p>
     </div>
 
     <section id="asistencia">
         <div class="secText">
             <h2>Por favor confirma tu asistencia</h2>
-            <div class="textBx">
-                <p>Whatsapp Novia</p>
-            </div>
-            <div class="textBx">
-                <p>Whatsapp Novia</p>
+            <div class="content">
+                <div class="textBx">
+                    <h2>Novia</h2>
+                    <a href=# id="noviaw"><img src="images/whatsapp.svg"></a>
+                </div>
+                <div class="textBx">
+                    <h2>Novio</h2>
+                    <a href=# id="noviow"><img src="images/whatsapp.svg"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -173,13 +174,25 @@
 
             if (isPlaying) {
                 playBtn.textContent = 'Play'
-                sound.pause();  // Pausa la reproducción
+                sound.pause();  
             } else {
                 playBtn.textContent = 'Pause'
-                sound.play();   // Inicia la reproducción
+                sound.play();   
             }
             isPlaying = !isPlaying;
         })
+
+        const VioN2="28964"
+        const VioN1="73554"
+        const ViaN2="72927"
+        const ViaN1="73524"
+
+        const Vio = VioN1 + VioN2;
+        const Via = ViaN1 + ViaN2;
+        
+        document.getElementById("noviaw").href = "https://wa.me/" + Via;
+        document.getElementById("noviaw").href = "https://wa.me/" + Vio;
+
 
         const countDownDate = new Date('Jan 22, 2024 00:00:00').getTime();
         const $days = document.getElementById('days');
