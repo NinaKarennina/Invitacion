@@ -182,15 +182,16 @@ header ul li a:hover {
   color: var(--text-color);
   font-size: var(--text-size-small);
   z-index: 100;
+  overflow-x: hidden;
 
 }
 
 .countdown .timer {
   display: grid;
   margin: 0.3em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   place-items: center;
-  font-weight: 400;
+  font-weight: 700;
   padding: 1em;
   border: 20px;
   border-color: var(--background-color);
@@ -230,6 +231,7 @@ header ul li a:hover {
   justify-content: center;
   flex-direction: row;
   z-index: 5;
+  overflow-x: hidden;
 }
 
 .secText {
@@ -281,7 +283,20 @@ header ul li a:hover {
 }
 
 
+.particula {
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 109;
+}
 
+.particula[data-padre="false"] {
+  width: 5px;
+  height: 5px;
+  z-index: 109;
+}
 
 @media(max-aspect-ratio:0.8) {
 
@@ -301,8 +316,5 @@ header ul li a:hover {
     display: none;
   }
 
-  iframe {
-    width: 70vw;
-    height: 60vw;
-  }
+  
 }
