@@ -307,7 +307,7 @@
                     explotar(particula);
                 }
 
-                if (top > window.innerHeight) {
+                if (top > window.innerHeight || velocidadY>25) {
                     particula.remove();
                 }
             }
